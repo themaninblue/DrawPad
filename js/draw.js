@@ -74,7 +74,7 @@ function init() {
 			
 			serial += ']}';
 
-			$.ajax('http://canvas-vis.heroku.com/?blah=blah', {type: 'POST', contentType: 'application/json', dataType:'json', processData: false, cache: false, data: serial, success: function() {
+			$.ajax('http://someurl.com/?blah=blah', {type: 'POST', contentType: 'application/json', dataType:'json', processData: false, cache: false, data: serial, success: function() {
 				var saved = $('<div id="saved">Saved!</div>')
 					.appendTo('body')
 			}});
